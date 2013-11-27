@@ -20,9 +20,8 @@ object FetchSupervisor {
   }
 }
 
-class MyCrawler extends WebCrawler{
-
-  override def handlePageStatusCode(webUrl: WebURL, statusCode: Int, statusDescription: String)     {
+class MyCrawler extends WebCrawler {
+  override def handlePageStatusCode(webUrl: WebURL, statusCode: Int, statusDescription: String) {
     System.out.println("%s - %s".format(statusCode, webUrl.getURL))
   }
 }
